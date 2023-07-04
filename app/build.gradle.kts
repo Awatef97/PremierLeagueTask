@@ -21,8 +21,14 @@ android {
     }
 
     buildTypes {
+        debug {
+            buildConfigField ("String", "BASE_URL", project.findProperty("baseUrl") as String)
+            buildConfigField ("String", "API_KEY", project.findProperty("apiKey")as String)
+        }
         release {
-            isMinifyEnabled = true
+            buildConfigField ("String", "BASE_URL", project.findProperty("baseUrl") as String)
+            buildConfigField ("String", "API_KEY", project.findProperty("apiKey")as String)
+            isMinifyEnabled = false
             proguardFiles (getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
@@ -79,5 +85,10 @@ dependencies {
     implementation(Lifecycle.runtimeLifeCycle)
     implementation(Lifecycle.livedataLifeCycle)
     implementation(Lifecycle.viewModelLifeCycle)
+
+    // Room
+    implementation(Room.roomRunTime)
+    kapt(Room.roomCompiler)
+    implementation(Room.roomKTX)
 
 }
