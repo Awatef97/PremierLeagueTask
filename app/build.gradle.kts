@@ -4,7 +4,6 @@ plugins {
     kotlin("android")
     kotlin("kapt")
     id ("dagger.hilt.android.plugin")
-    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -73,10 +72,6 @@ dependencies {
     // Hilt
     implementation(Hilt.hiltAndroid)
     kapt(Hilt.hiltCompiler)
-
-    //Navigation
-    implementation(NavigationComponent.navigationFragmentKTX)
-    implementation(NavigationComponent.navigationUIKTX)
 
     //Lifecycle
     implementation(Lifecycle.coreLifeCycle)

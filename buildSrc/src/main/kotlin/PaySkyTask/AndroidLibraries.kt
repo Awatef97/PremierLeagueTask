@@ -1,10 +1,4 @@
 
-object NavigationComponent{
-    const val navigationFragmentKTX = "androidx.navigation:navigation-fragment-ktx:2.5.3"
-    const val navigationUIKTX = "androidx.navigation:navigation-ui-ktx:2.5.3"
-
-}
-
 object Hilt{
     const val hiltAndroid = "com.google.dagger:hilt-android:2.45"
     const val hiltCompiler = "com.google.dagger:hilt-android-compiler:2.45"
@@ -35,7 +29,7 @@ object Utils{
 
 object AndroidUI{
     const val appCompact = "androidx.appcompat:appcompat:1.4.2"
-    const val materialDesign = "com.google.android.material:material:1.6.1"
+    const val materialDesign = "com.google.android.material:material:1.8.0"
     const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.1.4"
     const val recycleView = "androidx.recyclerview:recyclerview:1.3.0"
 }
