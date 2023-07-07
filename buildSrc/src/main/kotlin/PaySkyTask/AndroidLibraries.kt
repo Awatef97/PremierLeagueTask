@@ -41,3 +41,9 @@ object Room{
 
 }
 
+object Testing{
+    const val mockk = "io.mockk:mockk:1.13.2"
+    const val testCoroutine = "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4"
+    const val androidTestMockk = "io.mockk:mockk-android:1.13.2"
+}
+

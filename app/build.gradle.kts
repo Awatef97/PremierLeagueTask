@@ -86,4 +86,9 @@ dependencies {
     kapt(Room.roomCompiler)
     implementation(Room.roomKTX)
 
+    //Testing
+    testImplementation(Testing.mockk)
+    testImplementation (Testing.testCoroutine)
+    androidTestImplementation (Testing.androidTestMockk)
+
 }
